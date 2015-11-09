@@ -16,6 +16,7 @@ var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
 // Set up some program variables (global) for our maths problem
 var augend = 6;
 var addend = 3;
+var equation1 = 9;
 var sum;
 
 // We will use a remote console logging service for debug messages
@@ -29,7 +30,7 @@ function handleRequest(request, response){
     sum = augend * addend;
     // Send user the server response 
     response.end('Assignment One. Expected Sum of 6 + 3 is 9, Actual Sum returned by program is : ' + sum);
-    console.re.log("The actual answer is " + (augend + addend) );
+    console.re.log("The actual answer is " + equation1 );
     console.re.log("The values of the augend, addend and sum are respectively: " + augend + ", " + addend "," + sum);
     // ASSIGNMENT
     // 1. Add a debug message which ouputs the sum of the simple equation above. Values are available in the augend, addend 
